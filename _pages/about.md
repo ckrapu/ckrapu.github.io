@@ -1,6 +1,6 @@
 ---
 layout: about
-title: posts
+title: about
 nav: false
 permalink: /
 subtitle: 
