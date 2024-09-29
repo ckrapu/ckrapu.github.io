@@ -5,7 +5,7 @@ date: 2020-02-18 10:00:00-0000
 description: Assessing effective sample size for multiple variates
 ---
 
-**Summary: I show how to calculate a multivariate effective sample size after [Vats et al. (2019)](https://academic.oup.com/biomet/article/106/2/321/5426969)**. In applied statistics, Markov chain Monte Carlo (MCMC) is now widely used to fit statistical models. Suppose we have a statistical model $$p_\theta$$ of some dataset $$\mathcal{D}$$ which has a parameter $$\theta$$. The basic idea behind MCMC is to estimate $$\theta$$ by generating $$N$$ random variates $$\theta_i,\theta_2,...$$ from the posterior distribution $$p(\theta\vert\mathcal{D})$$ which are (hopefully) distributed around $$\theta$$ in a predictable way. The Bayesian central limit theorem states that under the right conditions, $$\theta_i$$ is normally distributed about the true parameter value $$\theta$$ with some sample variance $$\sigma^2$$. We might then want to use the mean of these samples $$\hat{\theta}=\sum_i^N \theta_i$$ as an estimator of $$\theta$$ since this *posterior mean* is an optimal estimator in the context of Bayes risk and mean square loss. 
+**Summary: I show how to calculate a multivariate effective sample size after [Vats et al. (2019)](https://academic.oup.com/biomet/article/106/2/321/5426969)**. In applied statistics, Markov chain Monte Carlo (MCMC) is now widely used to fit statistical models. Suppose we have a statistical model $$p_\theta$$ of some dataset $$\mathcal{D}$$ which has a parameter $$\theta$$. The basic idea behind MCMC is to estimate $$\theta$$ by generating $$N$$ random variates $$\theta_i,\theta_2,...$$ from the posterior distribution $$p(\theta|\mathcal{D})$$ which are (hopefully) distributed around $$\theta$$ in a predictable way. The Bayesian central limit theorem states that under the right conditions, $$\theta_i$$ is normally distributed about the true parameter value $$\theta$$ with some sample variance $$\sigma^2$$. We might then want to use the mean of these samples $$\hat{\theta}=\sum_i^N \theta_i$$ as an estimator of $$\theta$$ since this *posterior mean* is an optimal estimator in the context of Bayes risk and mean square loss. 
 
 This task has a few challenges lurking within. The accuracy of our estimate of $$\theta$$ is going to be low when we have only a few samples, i.e. $$N$$ is quite small. We can increase our accuracy by taking more samples. Ideally, our samples $$\theta_i$$ are all going to be *independent* so that we can make use of the theory of Monte Carlo estimators to assert that the error in our estimation of $$\theta$$ decreases at a rate of $$1/N$$. Thus, to get more accuracy, we draw more samples! 
 
@@ -33,7 +33,7 @@ $$\Lambda=\frac{N}{a(a-1)}\sum_k ({\vec{T}}_{(k)}-{\hat{\theta}})^T({\vec{T}}_{(
 $$\Sigma=\frac{1}{N-1}\sum_i ({\vec{\theta_i}}-{\hat{\theta}})^T({\vec{\theta_i}}^{(k)}-\hat{{\theta}})$$
 With these quantities, we write out the effective number of samples as before just with the matrix generalizations of all quantities involved. Note that here, $$p$$ represents the dimension of $$\theta_i$$.
 
-$$N_{eff}^{multi} = N\left(\frac{\vert\Lambda\vert}{\vert\Sigma\vert}\right)^{1/p}$$
+$$N_{eff}^{multi} = N\left(\frac{|\Lambda|}{|\Sigma|}\right)^{1/p}$$
 
 Note that you still need to choose how many batches are used - a rule-of-thumb (there are more technical conditions that are worth reading about, though) is to use a batch size of $$\sqrt{N}$$, so if you have 256 samples then there would be 16 batches of 16 samples each.
 
