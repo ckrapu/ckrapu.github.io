@@ -5,20 +5,22 @@ date: 2024-09-28 10:00:00-0000
 description: A wintertime climate change solution
 ---
 
-**TL;DR: To stop climate change, just do this -  raise crops for biomass (sequestering CO2) and freeze them in huge aboveground piles during winter by running pipes through the middle. With a little insulation, they won't ever thaw out during the summer. Since thermal exchange is $$\propto r^2$$ and total heat capacity $$\propto r^3$$, a big pile can be kept frozen indefinitely with a few tricks.**
+**Summary: To stop climate change, just do this -  raise crops for biomass (sequestering CO2) and freeze them in huge aboveground piles during winter by running pipes through the middle. With a little insulation, they won't ever thaw out during the summer. Since thermal exchange is $$\propto r^2$$ and total heat capacity $$\propto r^3$$, a big pile can be kept frozen indefinitely with a few tricks.**
 
-This is text from a research proposal I never finished. I keep thinking that I should do something with it. To keep from going crazy, I'm putting it here. 
+This is text from a research proposal I never completely finished. I keep thinking that I should do something with it. Since done is better than perfect, I'm putting it here. 
 
 # Introduction
 
-The removal large quantities of carbon from Earth's atmosphere is one of
+The removal large quantities of carbon (C) from Earth's atmosphere is one of
 the most promising pathways to avoiding or mitigating the worst effects
 of global warming or climate change. Proposed methods for doing so
 include direct air capture (DAC) [^1]. 
 
 An advantage of direct air capture is that the relevant infrastructure does
 not depend strongly on climate or soil type, and is limited primarily by
-manufacturing capacity and available energy. An alternative to using
+manufacturing capacity and available energy. Unfortunately, it is extremely expensive with even the  [^22] running at over $200 per ton of $CO_2e$ and generally requires the construction of bespoke machinery and equipment to perform an industrial process on atmospheric gas. 
+
+An alternative to using
 engineered systems for direct air capture is to instead allow plants to
 capture carbon via photosynthesis and store the vegetative biomass in a
 manner that prevents reentry of captured carbon back into circulation.
@@ -100,10 +102,10 @@ volumetric rates. Despite these differences, a basic indication of the
 viability of this approach is the 1.7 billion tons of C estimated to be
 stored in permafrost soils currently; [^6] provides a review of
 this accounting. Laboratory experiments conducted on arctic tundra soils
-obtain decay rates of 60 - 80 $$\mu$$g. C / g. C. / day at -0.5 C
-[^7], approximately 3 - 10% of decay rates obtained at 14C. At
+obtain decay rates of 60 - 80 $$\mu$$g. C / g. C. / day at -0.5 Celsius
+[^7], approximately 3 - 10% of decay rates obtained at 14 Celsius. At
 even lower temperatures, [^8] estimated that carbon emission
-rates of peatland soil at -14C. are approximately $$0.3 - 0.5\%$$ of
+rates of peatland soil at -14 Celsius. are approximately $$0.3 - 0.5\%$$ of
 summer emission rates. The mechanisms for these emissions are not
 concretely identified. Competing explanations include a purely inorganic
 mechanism of freezing liquid forcing out pockets of carbon-bearing gas
@@ -130,7 +132,7 @@ reaction surface is sufficient to cause melting and lead to a positive
 feedback loop between biological activity and thawing.
 
 ## Thermal modeling
-(TL:DR; we can freeze a lot of harvested crops if the interior is exposed during the wintertime)
+**Summary**: we can freeze a lot of biomass if the interior is in thermal contact with the atmosphere during wintertime
 
 
 In this section, I discuss the thermal energy budget for a highly
@@ -141,12 +143,12 @@ point for calculations, I assume that the hemisphere is of sufficient
 size to accommodate the harvest of one township (approx. 9300 hectares)
 of biomass cultivation over ten seasons at a conservative yield of
 approx. 3 tons per acre or 6800 kg / ha. Given these assumptions,
-$$6.3 \times 10^8$$ kg of wet biomass could be harvested during that time.
+$$6.3 \times 10^7$$ kg of wet biomass could be harvested during that time.
 Assuming that the mass of wet biomass is double that of dry biomass,
 i.e. a water content of 50%, and a ratio of 1 to 1.8 for mass of dry
-biomass to O$$_{2}$$e, 5.8 Gg CO$$_2$$e could be contained within this site.
+biomass to CO$$_{2}$$e, $5.8 \times 10^7$ kg. of CO$$_2$$e could be contained within this site.
 For dry switchgrass biomass with a density of 125 kg/m$$^3$$
-[^16], this would occupy $$5.1\times 10^6$$ cubic meters
+[^16], this would occupy $$4.6\times 10^5$$ cubic meters; this is roughly the storage volume of an average Costco store's interior.
 
 <div style="text-align:center">
 <img src="/assets/img/frozen-carbon-design-modified.png" alt="**Cross-sectional view of storage design**. The biomass is arranged in a hemisphere with radius r. To allow for thermal exchange during periods of low ambient temperature, conduits are placed at regular intervals of 2δ to increase heat transfer area." />
@@ -201,15 +203,17 @@ equivalent to a mass flow of 2.8 kg / s. Assuming operation during cold
 weather in which inflowing air is 5 K cooler than air at the pipe
 outlet, the heat exchanged from a single pipe in the storage mass and
 dissipated into the environment would constitute an energy flux of
-$$2.8 \times 5 \times 1006$$ J/s or roughly $$1.4\times 10^4$$ watts,
+$$2.8 \times 5 \times 10^3$$ J/s or roughly $$1.4\times 10^4$$ watts,
 providing enough exchange of thermal energy to freeze a cubic meter of
 liquid water at 0C in approximately six hours. Note that the thermal
 mass of the entire system is quite large; the latent heat of fusion for
 the water component assuming 50% porosity calculated previously as
-$$7\times 10^14$$ J. Assuming continuous cooling for
+$$7\times 10^{14}$$ J. Assuming continuous cooling for
 $$24\times 90 \times 3600$$ seconds, nearly 6000 pipes would be needed to
-freeze all liquid water as desired. However, I note a few potential
-ways to work around this. First, the actual creation of the storage
+freeze all liquid water as desired, beginning from a completely unfrozen mass.
+
+However, I note a few potential
+ways to optimize this. First, the actual creation of the storage
 mound could be done in layers during wintertime conditions, allowing for
 the exterior surface area to contribute to heat dissipation as well.
 Second, the mound could be constructed over multiple winters, allowing
@@ -221,7 +225,7 @@ piping to attain the right balance of thermal exchange and cost.
 
 ### External insulation 
 
-(TL;DR Thawing becomes really slow with even a modest layer of insulating plant matter)
+**Summary:** Thawing becomes incredibly slow with even a modest layer of insulating plant matter
 
 Measures to reduce the ambient environmental temperature within a buffer
 area around the storage site could significantly impact the overall
@@ -232,7 +236,7 @@ heat into latent heat. The reference design presented so far is
 sufficiently tall ($$\approx 100$$ m.) to render many of these expedients
 ineffective at shading the majority of the mass. A more economical
 choice may be to place a layer of dry vegetative matter on top of the
-design. Reports of R-values per inch for straw bales ranging from 0.5 to
+design. R-values per inch for straw bales ranging from 0.5 to
 2.5 have been reported [^19] and it is likely that lightly
 packed, dry biomass would likely have similar insulating ability.
 Placing such a layer with thickness in excess of two meters would imply
@@ -268,7 +272,7 @@ accounting for a variety of fixed and marginal costs. In this section,
 I reproduce several important numbers from [^5], making
 use of their extensive economic analyses as a starting point for our
 own. As I similarly make use of agricultural biomass, I quote their
-numbers for cost per ton of CO$$_2$$e in USD of \$6, \$13, and \$10 for
+numbers for cost per ton of carbon dioxide-equivalent (CO$$_2$$e) in USD of \$6, \$13, and \$10 for
 land purchase, crop establishment, and post-establishment cultivation
 respectively for sequestered miscanthus. However, the design proposed in
 that work requires dry storage, application of electric dryers, and rain
@@ -296,6 +300,8 @@ design previously illustrated remain valid for arbitrarily large storage
 volumes. However, instead of increasing the radius of the hemisphere, it
 may be more expedient to extend the design along a horizontal axis to
 produce an oval-shaped or cylindrical repository.
+
+In a previous section, I provided a rough number of 6800 kg. biomass harvested per hectare each year. To entirely offset global emissions of carbon dioxide, we would need approximately 40 billion tons sequestered per year; at 6 metric tons per acre, this implies 6 billion hectares of arable land. Unfortunately, we only have 1.4 billion hectares.
 
 ## Next steps?
 
@@ -359,3 +365,5 @@ propose some or any of the following
 [^20]: Costes, J. P., Evrard, A., Biot, B., Keutgen, G., Daras, A., Dubois, S., ... & Courard, L. (2017). Thermal conductivity of straw bales: Full size measurements considering the direction of the heat flow. Buildings, 7(1), 11.
 
 [^21]: Huang, W., Li, Z., Liu, X., Zhao, H., Guo, S., & Jia, Q. (2013). Effective thermal conductivity of reservoir freshwater ice with attention to high temperature. Annals of Glaciology, 54(62), 189-195.
+
+[^22]: https://www.milkywire.com/articles/direct-air-capture-is-cheaper-than-you-think
