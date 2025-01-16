@@ -23,3 +23,10 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.highlight {
+  font-size: 8pt; // Adjust this value to change the font size
+  line-height: 1.8;
+  max-width: 80%; // Adjust this value to your desired width
+  margin: 0 auto; // Centers the code block
+}
