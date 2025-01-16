@@ -24,7 +24,7 @@ In this document, I will show you some good practices on building a data cleanin
 
 You may think this part is trivial, but there are still ways to make your life miserable. Managing package versions in Python is hard, for structural reasons related to the Python ecosystem. The ecosystem's greatest strength is its diversity, but this is also the cause of a highly fractured landscape of solutions (`pip`, `conda`, `uv`, `poetry`, to name a few).
 
-Here's an idea I will bring up repeatedly in this notebook: your goal is maximize $$P(rerunnable|age)$$ where $$age$$ itself is an unbounded positive variable. With this in mind, note the following:
+Here's an idea I will bring up repeatedly in this notebook: your goal is maximize the probability that your future self can reproduce your work and edit it at a much later stage. With this in mind, note the following:
 
 - Just use `pip` with a virtual environment. You can use a fancy, richly-featured package manager like Poetry. This will make you look like a smart guy when people are looking at your repo. However, be honest with yourself. How likely is it that you are going to be using the same Python tooling in 5 years? My advice is to just use `pip` with a virtual environment. It'll be way slower than `uv` and it won't have as many features as Poetry, but you can be sure that when you dig your code out, you will remember how to do `python -m venv venv && source venv/bin/activate && pip install -r requirements`. You might not even be working in tech several years out, in which case you will definitely **not** want something fancy and richly-featured for the advanced Python developer
 
@@ -759,11 +759,11 @@ train_gdf.plot()
 
 
 
-    <Axes: >
-    <p align="center">
-        <img src="/images/nlcd-dataset/01-preparing-a-dataset_23_1.png" width="65%">
-    </p>
-    
+<Axes: >
+<p align="center">
+    <img src="/images/nlcd-dataset/01-preparing-a-dataset_23_1.png" width="65%">
+</p>
+
 
 
 #### Plot sample images
@@ -1043,7 +1043,7 @@ else:
 
 
 <p align="center">
-    <img src="/images/nlcd-dataset/01-preparing-a-dataset_39_0.png" width="65%">
+    <img src="/images/nlcd-dataset/01-preparing-a-dataset_39_0.png" width="90%">
 </p>
     
 
@@ -1232,7 +1232,7 @@ else:
 
     
 <p align="center">
-    <img src="/images/nlcd-dataset/01-preparing-a-dataset_44_1.png" width="65%">
+    <img src="/images/nlcd-dataset/01-preparing-a-dataset_44_1.png" width="90%">
 </p>
     
 
@@ -1437,7 +1437,7 @@ animator.create_animation()
 With this code, we get some nice visualizations of our data samples, rotating and shown in 3D!
 
 <p align="center">
-<img src="/images/nlcd-dataset/terrain_rotation.gif" width="800" align="center">
+<img src="/images/nlcd-dataset/terrain_rotation.gif" width="900" align="center">
 </p>
 
 # Epilogue: optimization
