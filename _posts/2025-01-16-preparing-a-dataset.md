@@ -7,9 +7,9 @@ description: Opinionated commentary on making a data cleaning script for researc
 
 *An example notebook for creating a geospatial machine learning dataset with opinionated commentary.*
 
-As a PhD graduate employed in tech, I am well aware of the existing stereotypes of folks with advanced degrees - they aren't team players, they use poor practices, they're overly focused on technical aspects, etc. I personally think that my career is an excellent example of all of these.
+As a former grad student employed in tech, I am well aware of the existing stereotypes of folks with advanced degrees - they aren't team players, they use poor practices, they're overly focused on technical aspects, etc. I personally think that my career is an excellent example of all of these.
 
-However, I can give you a strong selling point for PhD graduates as candidates in tech (applicable mostly in the USA, where 5 year+ programs are the norm).
+However, I can give you a strong selling point for people like me as candidates in software development (applicable mostly in the USA, where 5 year+ PhD programs are the norm).
 
 The point is this: **there is no other structured program on the planet that forces so many smart, motivated people to come back to their terrible old codebase and have to deal with it alone, without any help, and with virtually zero budget**.
 
