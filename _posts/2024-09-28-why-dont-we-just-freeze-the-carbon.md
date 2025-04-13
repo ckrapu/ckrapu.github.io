@@ -18,7 +18,7 @@ include direct air capture (DAC) [^1].
 
 An advantage of direct air capture is that the relevant infrastructure does
 not depend strongly on climate or soil type, and is limited primarily by
-manufacturing capacity and available energy. Unfortunately, it is extremely expensive with even the  [^22] running at over $200 per ton of $CO_2e$ and generally requires the construction of bespoke machinery and equipment to perform an industrial process on atmospheric gas. 
+manufacturing capacity and available energy. Unfortunately, it is extremely expensive with even the  [^22] running at over $200 per ton of $$CO_2e$$ and generally requires the construction of bespoke machinery and equipment to perform an industrial process on atmospheric gas. 
 
 An alternative to using
 engineered systems for direct air capture is to instead allow plants to
@@ -146,7 +146,7 @@ approx. 3 tons per acre or 6800 kg / ha. Given these assumptions,
 $$6.3 \times 10^7$$ kg of wet biomass could be harvested during that time.
 Assuming that the mass of wet biomass is double that of dry biomass,
 i.e. a water content of 50%, and a ratio of 1 to 1.8 for mass of dry
-biomass to CO$$_{2}$$e, $5.8 \times 10^7$ kg. of CO$$_2$$e could be contained within this site.
+biomass to CO$$_{2}$$e, $$5.8 \times 10^7$$ kg. of CO$$_2$$e could be contained within this site.
 For dry switchgrass biomass with a density of 125 kg/m$$^3$$
 [^16], this would occupy $$4.6\times 10^5$$ cubic meters; this is roughly the storage volume of an average Costco store's interior.
 
