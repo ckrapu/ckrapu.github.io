@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simulating Planetary Waves
+title: Simulating planetary waves
 date: 2025-07-22
 description: Demonstrating simplified models for understanding and visualizing Rossby waves
 tags: physics simulation python
@@ -82,9 +82,9 @@ Note that the role of the `omega_rad_s` is primarily to impart accelerations due
 
 $$ \frac{\partial\nabla^2 \psi}{\partial t} + U \frac{\partial\nabla^2 \psi}{\partial x} + \beta \frac{\partial \psi}{\partial x}$$
 
-where $$U$$ denotes the average zonal velocity, also described as the mean westerly flow. Note that $\beta = \frac{2\omega \cos \phi}{a}$$, the Rossby parameter, captures the dependence of the system on latitude, as well as the size of the Earth and the speed of Earth's rotation.
+where $$U$$ denotes the average zonal velocity, also described as the mean westerly flow. Note that $$\beta = \frac{2\omega \cos \phi}{a}$$, the Rossby parameter, captures the dependence of the system on latitude, as well as the size of the Earth and the speed of Earth's rotation.
 
-Our first version will use an analytical solution, specified in terms of Cartesian coordinates $$x$$, $$y$$, wavenumbers $$k$$ and $$l$$, and angular velocity $\omega$. The analytical solution provides a direct mathematical expression for the streamfunction $$\psi(x,y,t)$$ as a function of spatial position $(x, y)$ and time $t$.
+Our first version will use an analytical solution, specified in terms of Cartesian coordinates $$x$$, $$y$$, wavenumbers $$k$$ and $$l$$, and angular velocity $$\omega$$. The analytical solution provides a direct mathematical expression for the streamfunction $$\psi(x,y,t)$$ as a function of spatial position $$(x, y)$$ and time $$t$$.
 
 $$\psi(x,y,t) = \psi_0 e^{i(kx + ly - \omega t)}$$
 
@@ -160,7 +160,7 @@ fig, ax = plt.subplots()
 # Remember that imshow doesn't know the x-y coords for this data;
 # we have to give it the extent.
 im = ax.imshow(state.ψ[-1].real, origin='lower', extent=[0, cfg.x_size_m/1000, 0, cfg.y_size_m/1000])
-plt.colorbar(im, label = "Streamfunction $\psi(x,y)$")
+plt.colorbar(im, label = "Streamfunction $$\psi(x,y)$$")
 plt.ylabel("y (km)"), plt.xlabel('x (km)')
 
 # Since the grid is quite large, we subset the locations in which we actually
@@ -172,7 +172,7 @@ q = ax.quiver(cfg.x_arr[::n, ::n]/1000, cfg.y_arr[::n, ::n]/1000, state.u[-1, ::
 ax.set_aspect('equal', adjustable='box') # Ensure aspect ratio is equal
 ```
 <div style="text-align: center;">
-<img src="{{ site.baseurl }}/images/2025-07-22-simulating-planetary-waves/wave-still.png" alt="Rossby wave visualization at final timestep" width="400"/>
+<img src="{{ site.baseurl }}/images/2025-07-22-simulating-planetary-waves/wave-still.png" alt="Rossby wave visualization at final timestep" width="280"/>
 </div>
 
 ### Animating the streamfunction and velocity field
@@ -221,7 +221,7 @@ ani = FuncAnimation(fig, animate, frames=cfg.iterations, interval=50, blit=True)
 HTML(ani.to_html5_video())
 ```
 
-<video controls width="100%">
+<video controls width="85%">
   <source src="{{ site.baseurl }}/images/2025-07-22-simulating-planetary-waves/wave-animation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
