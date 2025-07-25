@@ -1136,8 +1136,13 @@ ninja-keys::part(ninja-input-wrapper) {
     inset: 0;
     border: 1px solid var(--global-theme-color);
     border-radius: 6px;
-    opacity: 0.75;
+    opacity: 0;
     pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  &:hover::before {
+    opacity: 0.75;
   }
   
   .collapsible-header {
