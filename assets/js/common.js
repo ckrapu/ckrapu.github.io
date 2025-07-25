@@ -51,4 +51,34 @@ $(document).ready(function () {
       });
     }
   });
+
+  // Collapsible boxes functionality
+  const initCollapsibles = () => {
+    document.querySelectorAll('.collapsible-header').forEach(header => {
+      header.addEventListener('click', toggleCollapsible);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleCollapsible.call(header);
+        }
+      });
+    });
+  };
+
+  function toggleCollapsible() {
+    const content = this.nextElementSibling;
+    const isOpen = this.classList.contains('open');
+    
+    this.classList.toggle('open');
+    content.classList.toggle('open');
+    this.setAttribute('aria-expanded', !isOpen);
+    
+    // Update icon rotation instead of changing the icon class
+    const icon = this.querySelector('.collapsible-icon');
+    if (icon) {
+      // The CSS handles the rotation based on the .open class
+    }
+  }
+
+  initCollapsibles();
 });

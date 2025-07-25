@@ -1123,3 +1123,62 @@ ninja-keys {
 ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
+
+// Collapsible boxes
+.collapsible-box {
+  position: relative;
+  border-radius: 6px;
+  margin: 1rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 6px;
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  
+  .collapsible-header {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--global-theme-color);
+    user-select: none;
+    
+    &:hover {
+      color: var(--global-hover-color);
+    }
+    
+    &:focus {
+      outline: none;
+    }
+    
+    .collapsible-icon {
+      margin-right: 0.5rem;
+      transition: transform 0.15s ease;
+      font-size: 0.875rem;
+    }
+    
+    &.open .collapsible-icon {
+      transform: rotate(90deg);
+    }
+  }
+  
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease;
+    
+    &.open {
+      max-height: 100em;
+    }
+    
+    .collapsible-inner {
+      padding: 0 1rem 1rem 1rem;
+      color: var(--global-text-color);
+    }
+  }
+}

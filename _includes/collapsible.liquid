@@ -1,0 +1,16 @@
+{% assign box_id = include.id | default: 'collapsible-' | append: site.time | append: include.title | slugify %}
+<div class="collapsible-box" id="{{ box_id }}">
+  <div class="collapsible-header" role="button" tabindex="0" aria-expanded="false" aria-controls="{{ box_id }}-content">
+    <i class="collapsible-icon fas fa-chevron-right" aria-hidden="true"></i>
+    <span>{{ include.title }}</span>
+  </div>
+  <div class="collapsible-content" id="{{ box_id }}-content">
+    <div class="collapsible-inner">
+      {% if include.content %}
+        {{ include.content | markdownify }}
+      {% else %}
+        {{ include.text }}
+      {% endif %}
+    </div>
+  </div>
+</div>
