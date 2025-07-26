@@ -32,7 +32,7 @@ I received my graduate training in statistics and engineering at Duke University
 
 {% capture personal_info %}
 - I was hard of hearing in my early life, and spent most of my childhood in speech therapy.
-- I started full-time college at 15 at Valley City State University and later studied at Macalester College for physics.
+- I started college at Valley City State University and later studied at Macalester College for physics.
 - My family name is of Finnish origin. My great-grandfather emigrated from Finland around 1890.
 - You can email me using the format of first initial followed by last name (no punctuation) at gmail
 
