@@ -15,7 +15,7 @@ I know that you didn't write that. I know it was touched by an AI, and you will 
 
 I'm also into a lot of weird use cases. At my first job out of grad school, I tried to convince my manager that GPT-3 could be used to figure out whether or not a building had air-conditioning vents. That same month, I tried to get it to make 1000 top-grade headlines from The Onion and write bedtime stories for my child based on Wikipedia articles. You can bet your bottom dollar that I know when your Python class methods were cooked up by Qwen Coder.
 
-You should also know that I learned to read early and skipped first grade. Consequently, I was the perennial runt of the classroom and spent all my time reading as a child. I've gotten perfect scores on every reading test I've ever taken, including the SAT and GRE.
+You should also know that I learned to read early and skipped first grade. Consequently, I was the perennial runt of the classroom and spent all my time reading as a child.
 
 This is all to say one thing - I will always know when you didn't write it. Alternately, perhaps I really like you and think you have potential, so I am sending you this message prematurely so that you don't accidentally trigger a peeve of mine.
 
