@@ -1128,7 +1128,12 @@ ninja-keys::part(ninja-input-wrapper) {
 .collapsible-box {
   position: relative;
   border-radius: 6px;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  
+  // Reduce spacing between consecutive collapsible boxes
+  & + .collapsible-box {
+    margin-top: 0.25rem;
+  }
   
   &::before {
     content: '';
