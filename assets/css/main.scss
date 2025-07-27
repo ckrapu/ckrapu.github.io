@@ -40,9 +40,9 @@ $max-content-width: {{ site.max_width }};
   border: 1.5px solid rgba(var(--global-theme-color-rgb), 0.6);
   border-radius: 12px;
   background-color: rgba(var(--global-theme-color-rgb), 0.08);
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin: 2rem 0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
               0 2px 4px -1px rgba(0, 0, 0, 0.06),
@@ -59,7 +59,7 @@ $max-content-width: {{ site.max_width }};
   
   span {
     line-height: 1.7;
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     opacity: 0.95;
   }
 }
