@@ -1,0 +1,9 @@
+{%- comment -%}
+  Important Box component - highlights important text with primary theme color
+  Usage: {% include important-box.liquid content="Your important text here" %}
+{%- endcomment -%}
+
+<div class="important-box">
+  <i class="fas fa-exclamation-triangle"></i>
+  <span>{{ include.content }}</span>
+</div>

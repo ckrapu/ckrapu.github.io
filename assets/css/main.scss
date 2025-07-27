@@ -30,3 +30,58 @@ $max-content-width: {{ site.max_width }};
   max-width: 80%; // Adjust this value to your desired width
   margin: 0 auto; // Centers the code block
 }
+
+// Important Box styles
+.important-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border: 1.5px solid rgba(var(--global-theme-color-rgb), 0.6);
+  border-radius: 12px;
+  background-color: rgba(var(--global-theme-color-rgb), 0.08);
+  color: var(--global-theme-color);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06),
+              0 0 0 1px rgba(var(--global-theme-color-rgb), 0.1);
+  
+  i {
+    font-size: 1.2em;
+    margin-top: 0.2em;
+    flex-shrink: 0;
+    color: var(--global-theme-color);
+    animation: pulse 2s ease-in-out infinite;
+    opacity: 0.9;
+  }
+  
+  span {
+    line-height: 1.7;
+    color: var(--global-theme-color);
+    opacity: 0.95;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+// Dark mode adjustments for important-box
+html[data-theme="dark"] {
+  .important-box {
+    background-color: rgba(var(--global-theme-color-rgb), 0.12);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(var(--global-theme-color-rgb), 0.2);
+  }
+}
