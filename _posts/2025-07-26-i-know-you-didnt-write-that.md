@@ -1,5 +1,5 @@
 ---
-title: I know that you didn't write this. I am a SOTA 0-shot classifier of your slop.
+title: I am a SOTA 0-shot classifier of your slop.
 layout: post
 date: 2025-07-26 10:00:00-0000
 description: My reaction to subpar AI-generated work
@@ -17,7 +17,7 @@ I'm also into a lot of weird use cases. At my first job out of grad school, I tr
 
 This is all to say one thing - I will always know when you didn't write it. Alternately, perhaps I really like you and think you have potential, so I am sending you this message prematurely so that you don't accidentally trigger a peeve of mine.
 
-Why do I seem to be taking this so personally? Well, it's mostly an issue of time. My life is busy. I have children, a demanding job, and personal aspirations. When I want information to help you, enable you, or supervise you, I want it in the most efficient format possible. Invariably, this means that you spend at least a modicum of effort whittling down and throwing out the parts that aren't important.
+Why do I seem to be taking this so personally? Well, it's mostly an issue of time. My life is busy. I have children, a job, and personal aspirations (just kidding, that ended in '22). When I want information to help you, enable you, or supervise you, I want it in the most efficient format possible. Invariably, this means that you spend at least a modicum of effort whittling down and throwing out the parts that aren't important.
 
 LLMs are very good at producing output, but they are not a substitute for you.
 
