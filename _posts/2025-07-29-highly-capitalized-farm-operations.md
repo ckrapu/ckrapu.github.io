@@ -19,7 +19,7 @@ Unfortunately, I think America's large farming operations are headed for a bad p
 
 {% include important-box.liquid content="Here's my central thesis: American farming assumes that smart, hard-working operators are available but few in number, leading to massive pieces of equipment with tons of negative side effects. However, autonomous human-sized robots capable of basic farm work are imminent, will be competitive on performance and will be much easier to capitalize."%}
 
-Trying to extrapolate the expected timeline for this change is hard because the last major transition (horses to tractors) involved going from many small, cheap investments (individual animals) to a single large, risky investment. This time, we're reversing that cycle - farmers will have the option to make smaller, safer investments into autonomous humanoid labor.
+Trying to extrapolate the expected timeline for this change is hard because the last major transition (horses to tractors) involved going from many small, cheap investments (individual animals) to a single large, risky investment. This time, we're reversing that cycle - farmers will have the option to make smaller, safer investments into [autonomous humanoid labor](https://www.figure.ai/).
 
 In fewer words: how many of those expensive farming implements could compete with an army of autonomous serfs working around the clock?
 
@@ -33,24 +33,26 @@ If you are thinking of investing in a brand new combine, do you really want to b
 
 {% include important-box.liquid content="Want to know something else? When you're at the supper club and you run into Phil from the JD dealership, you can tell him to go f$#% himself and that you won't be needing his help with the header hydraulics anymore."%}
 
-There's also a ton of fringe benefits from downsizing. Big equipment is hard to maneuver and keeps you from farming right up to the treelines. Since the 80s, nearly a million acres of farmland have been taken out of production[^7], mostly because the parcels were too small. It's heavy, too, and can't be deployed in wet conditions that would otherwise be fine for planting or harvesting. You can't split up a combine and only use half of its capacity at a time. With a single large piece of equipment, you are hosed if it fails. 
+There's also a ton of fringe benefits from downsizing. 
 
-With smaller units of equipment, the probability that *all* of your units are out-of-commission simultaneously due to mechanical failures is exponentially smaller. 
+Big equipment is hard to maneuver and keeps you from farming right up to the treelines. It's heavy, too, and can't be deployed in wet conditions that would otherwise be fine for planting or harvesting.  Since the 80s, nearly 30 million acres of farmland have been taken out of production[^7], mostly because the parcels were too small or awkwardly placed. 
+
+With smaller units of equipment, the probability that *all* of your units are out-of-commission simultaneously due to mechanical failures is exponentially smaller. You can't split up a combine and only use half of its capacity at a time. With a single large piece of equipment, you are hosed if it fails. 
 
 Another thing - using big machinery forces you to plant in rows. Rows are not the optimal solution to the sphere-packing problem. Hexagonal or offset-row designs would allow for denser plantings for a given minimum distance between seedlings. We're leaving a possible 10% of yield on the table just because straight rows are not space-efficient. This effect is especially pronounced in more northerly regions[^4] where sunlight is more limited.
 
 Most importantly, you can't use a combine for anything else, like planting trees or pressing oils. The average utilization for the harvester referenced above is roughly *two percent*[^5]. This is an insanely weird use of capital, made possible only by the fact that this equipment is too bulky to move over large distances and you can't share your neighbor's harvester because they need it too. Compare this to the manufacturing industry, where average utilization is more like 70%. 
 
-### Diversified farming
+### Diversified farming from the labor surplus
 We used to have apple trees on our farmland. I'd love for us to have more of them, but they can be a lot of work. If you offered me ATaaS (Apple Trees as a Service), would I bite?
 
 You can bet your ripe, red bottom that I would.
 
-Everyone loves the idea of diversified farms producing a range of tasty goods like bacon, applejack, and butter all from the same 40 acres. Enviro-lefties appreciate that the chemical requirements and side effects are lessened. Boomers' brains still harbor a few neurons capable of remembering what it was like to milk a cow and dress a chicken when *they* were young little farmers-in-training. 
+Everyone loves the idea of diversified farms producing a range of tasty goods like bacon, applejack, and butter all from the same 40 acres. Enviro-lefties appreciate that the chemical requirements and ecological side effects are lessened. Some rural conservatives vaguely remember what it was like to milk a cow and dress a chicken when *they* were young farmers-in-training. 
 
 Diversified farms went away for a simple reason: they're a lot of work for less money, and the opportunity cost got really high. Family sizes dropped and kids left the farm, leading to a decrease in cheap labor. Suppose you take the analysis from the previous section to heart and got yourself a team of a few dozen autonomous robots. They'll be busy during harvest time, of course, but what about the rest of the year? Could they perhaps be sweeping out the chicken coop and pruning the fruit trees? 
 
-My expectation is that this abundance of *versatile* farm machinery will lead to a resurgence in diversified ag production, simply because there will be excess autonomous labor available outside of the harvest season.
+My expectation is that this abundance of *versatile* humanoid farm machinery will lead to a resurgence in diversified ag production, simply because there will be excess autonomous labor available outside of the harvest season.
 
 ### Unscrambling our housing market
 I also think autonomous humanoid robotics for farming will have substantial knock-on effects in the desirability of rural America from a housing perspective. Having a few acres with your own fruit trees, a walking path, a few fences or stone walls, a garden, a few small animals, and nice landscaping is in line with our current fantasies[^6]. But, again, it is an issue of time and labor. 
@@ -59,6 +61,10 @@ In the USA, we are so used to experiencing rural areas which are aesthetically u
 
 There's yet another benefit - all the awful red tape and NIMBYism that 
 ensnares would-be homebuilders generally doesn't exist in rural areas, and there are fewer hurdles (aside from availability of labor) to new construction.
+
+
+#### Conclusion
+In all, I'm unreasonably optimistic about the future of American farmland despite the avalanche of technological change that's about to sweep through labor, markets, and society overall. Hopefully we'll get right to repair as well!
 
 ---
 
