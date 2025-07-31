@@ -25,9 +25,8 @@ In fewer words: how many of those expensive farming implements could compete wit
 
 Let's walk through a few illustrative points. 
 
-
-### Will you always need that combine?
-A big grain operation runs a combine that costs a million dollars (new) and harvests approx. 100 acres a day[^3]. From old farming records from the early USA, we know that a man can harvest about two acres a day by hand. Given that robots don't get arthritis and don't mind working in the sun, you could probably get 2x (4 ac / day) a human's performance over the same 24 hours. This tells us that roughly 40 units of autonomous labor would be needed to match the million-dollar combine with a break-even price of $$ \$1,000,000 / 40 = \$25,000$$ . Given that new humanoid robots are coming out at or below that level, I see unfavorable signs for the future of big iron.
+### Combine vs serfs
+A big grain operation runs a combine that costs a million dollars (new) and harvests approx. 100 acres a day[^3]. From old farming records from the early USA, we know that a man can harvest about two acres a day by hand. Given that robots don't get arthritis and don't mind working in the sun, you could probably get 200% (4 acres / day) of human's performance over the same 24 hours. This tells us that roughly 40 units of autonomous labor would be needed to match the million-dollar combine with a break-even price of $$ \$1,000,000 / 40 = \$25,000$$ . Given that new humanoid robots are coming out at or below that level, I see unfavorable signs for the future of big iron.
 
 If you are thinking of investing in a brand new combine, do you really want to bet that big tech cannot produce a robot smart and durable enough to harvest corn?
 
@@ -61,6 +60,9 @@ In the USA, we are so used to experiencing rural areas which are aesthetically u
 
 There's yet another benefit - all the awful red tape and NIMBYism that 
 ensnares would-be homebuilders generally doesn't exist in rural areas, and there are fewer hurdles (aside from availability of labor) to new construction.
+
+### Economic analysis
+Bringing these ideas together, we can start to form a concrete analysis of the actual delta in value from debiggifying mechanized agriculture:
 
 
 #### Conclusion
