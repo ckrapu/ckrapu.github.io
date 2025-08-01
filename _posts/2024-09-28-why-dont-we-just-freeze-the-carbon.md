@@ -324,6 +324,9 @@ propose some or any of the following
     forcing data for air temperature, incident solar radiation, and
     windspeed over 10+ years
 
+
+## References
+
 [^1]: McQueen, N., Gomes, K. V., McCormick, C., Blumanthal, K., Pisciotta, M., & Wilcox, J. (2021). A review of direct air capture (DAC): Scaling up commercial technologies and innovating for the future. Progress in Energy, 3(3), 032001.
 
 [^2]: Keil, R. G., Nuwer, J. M., & Strand, S. E. (2010). Burial of agricultural byproducts in the deep sea as a form of carbon sequestration: A preliminary experiment. Marine Chemistry, 122(1), 91-95.

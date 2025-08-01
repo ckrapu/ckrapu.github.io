@@ -172,7 +172,7 @@ q = ax.quiver(cfg.x_arr[::n, ::n]/1000, cfg.y_arr[::n, ::n]/1000, state.u[-1, ::
 ax.set_aspect('equal', adjustable='box') # Ensure aspect ratio is equal
 ```
 <div style="text-align: center;">
-<img src="{{ site.baseurl }}/images/2025-07-22-simulating-planetary-waves/wave-still.png" alt="Rossby wave visualization at final timestep" width="280"/>
+<img src="{{ site.baseurl }}/images/2025-07-22-simulating-planetary-waves/wave-still.png" alt="Rossby wave visualization at final timestep" width="600"/>
 </div>
 
 ### Animating the streamfunction and velocity field
