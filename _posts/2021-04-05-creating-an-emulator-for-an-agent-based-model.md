@@ -147,7 +147,6 @@ if generate_animations:
 ```
 
 ![gif]({{ site.baseurl }}/images/sir_states9.gif)
-![gif]({{ site.baseurl }}/images/sir_states.gif)
 
 Clearly, the model parameters make a major difference in the rate of spread of the virus. In the lower case, the spread requires over 100 timesteps to infect most of the agents.
 
