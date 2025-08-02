@@ -7,13 +7,13 @@ description: Clarity and depth thanks to fourteen pounds of infant
 
 In my bedroom, it's pitch black and silent, save for the slightly wheezy exhalations of my newborn. I'm reclined sixty degrees backward and have found the sweet spot where the static friction of his soft onesie adorned with happy-faced clouds is just enough to keep him from sliding out of his dreams and onto my lap.
 
-At this critical angle, my hands are free to leave his sides and, as I pull them back, I rub the fingers of my right hand together. I enjoy the slickness of the residual diaper cream on my fingertips; I couldn't get all of it off with the wet wipes.
+At this critical angle, my hands are free to leave his sides and, as I pull them back, I rub the fingers of my right hand together. I actually enjoy the slickness of the residual diaper cream on my fingertips; I couldn't get all of it off with the wet wipes.
 
 {% include important-box.liquid content="After wiping my son's bottom, I often feel a tiny grain between my fingers. It's a little bit of his newborn poo which somehow escaped. No one warns you that newborn poo is like grainy mustard." %}
 
 Surprisingly, this is where I do my best work. 
 
-I'm not a "kids" person. I don't think there's anything especially magical about the moment of childbirth, or their first smile, or any of these other discrete events. If there is magic, it accumulates slowly and can only be appreciated upon long reflection. I find childcare **very** hard. Some of it is probably because I seem to be a little more sensitive to loud sounds than the average man. I've also always been spoiled with sleep, getting 8+ hours. Mostly though, it is because I, since being a toddler, have always been expected to entertain myself and have enjoyed the luxury of absentmindedness and abundant daydreams. This is an asset in research, but not for infant care.
+I'm not a "kids" person. I don't think there's anything especially magical about the moment of childbirth, or their first smile, or any of these other discrete events. If there is magic, it accumulates slowly and can only be appreciated upon long reflection. I find childcare **very** hard. Some of it is probably because I seem to be a little more sensitive to loud sounds than the average person. I've also always been spoiled with sleep, getting 8+ hours. Mostly though, it is because I, since being a toddler, have always been expected to entertain myself and have enjoyed the luxury of absentmindedness and abundant daydreams. This is an asset in research, but not for infant care.
 
 In spite of this, when I am leaned back in my chair and have my baby sleeping on my chest in the dark, it is an entirely unique experience for me, certainly more than the sum of its parts. It's like having a weighty, warm security blanket who comes with his own rhythmic soundtrack and who will absolutely punish me if I get up to have a Spindrift or check my LinkedIn messages.
 
