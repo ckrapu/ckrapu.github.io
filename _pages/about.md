@@ -23,9 +23,7 @@ I received my graduate training in statistics and engineering at Duke University
 
 
 {% capture professional_info %}
-- I spent 2014-2020 in grad school. I loved grad school so much that I pushed back my defense for a year just so I could use all of my funding and focus on my research.
-- From 2020-2022, I was a scientist at Oak Ridge National Lab, mostly focused on applied Bayesian methods and machine learning.
-- In 2022, I got my first tech job at Realtor.com, working on the recommendations team.
+- I spent six years in grad school. I loved grad school so much that I pushed back my defense for a year just so I could use all of my funding and focus on my research.
 - I moved to NVIDIA in 2024, focusing on retrieval and agentic workflows for our sales & field operations.
 {% endcapture %}
 {% include collapsible.liquid title="Professional experience" content=professional_info %}
