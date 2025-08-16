@@ -6,7 +6,7 @@ description: Probing statistical bias across LLM families and use cases
 tags: llm statistics 
 ---
 
-**TL;DR: LLMs finetuned for roleplaying give fair coin flips when prompted to do so. The best models for coding and problem solving give very biased coin flips. Factors like architecture and reasoning mode don't explain much.**
+**TL;DR: LLMs finetuned for roleplaying give fair coin flips when prompted to do so. The best models for coding and problem solving give very biased coin flips. Factors like architecture and reasoning mode don't explain much. Code to reproduce this work is provided on [Colab](https://colab.research.google.com/drive/1etkT-ADgP6tN9-0KCXQHFqQM9c1yZO_w).**
 
 Language models have no reason to flip coins. They are (broadly speaking) [not capable of generating random numbers](https://people.csail.mit.edu/renda/llm-sampling-paper) nor should they be able to do so - there's no step in the data or training pipelines for LLMs that encourages this behavior.
 
@@ -14,9 +14,9 @@ But, what if they could? What would it take to produce an LLM capable of drawing
 
 The point isn't to see whether $$\mathcal{M}_{transformers}$$ is sufficiently expressive to implement a decent random number generator ([surprise, it is](https://arxiv.org/abs/2502.10390)) but rather to see if our best computational model for intelligence can be pushed to do it, and if it offers any benefits.
 
-I acknowledge this is a dumb question. Here is a chance for you to cease reading and go about your day without any ill feelings from me.
+Towards this end, I wanted to see what happened if I used a simple prompt for simulating a coin flip with as many models as possible.
 
-Towards this end, I wanted to see what happened if I used a simple prompt with as many models as possible.
+I acknowledge this is a dumb question. Here is a chance for you to cease reading and go about your day without any ill feelings from me.
 
 ### Flipping coins across all of OpenRouter
 OpenRouter supports over 200 large language models' inference endpoints. Most of them support text and are tuned for instruction-following and chat. There's a delightful range of models including the tried-and-true `gpt-4-turbo`, the roleplaying models, the foreign-language finetunes like `scb10x/llama-3-typhoon-v1.5x-70b-instruct`, and even cutting-edge diffusion models from like `mercury/inception`.
@@ -48,7 +48,7 @@ If you were to run a similar analysis, here's a list of models I would skip:
 models_to_skip = (
     'eleutherai/llemma_7b',
     'google/gemini-2.5-pro-preview-05-06',
-    'meta-llama/llama-3.1-405b',
+    'meta-llama/llama-3.1-405b', # Had some weird errors
     'meta-llama/llama-guard-2-8b',
     'meta-llama/llama-guard-3-8b',
     'meta-llama/llama-guard-4-12b',
