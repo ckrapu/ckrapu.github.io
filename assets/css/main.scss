@@ -86,9 +86,11 @@ html[data-theme="dark"] {
   }
 }
 
-// Table styling for Markdown content
-.post table,
-article table {
+// Table styling for Markdown content (excluding Bootstrap tables)
+.post table:not(.table),
+article table:not(.table),
+.post-content table,
+d-article table {
   margin: 2rem auto; // Centers the table and adds vertical spacing
   border-collapse: collapse;
   width: auto;
@@ -113,8 +115,10 @@ article table {
 
 // Dark mode adjustments for tables
 html[data-theme="dark"] {
-  .post table,
-  article table {
+  .post table:not(.table),
+  article table:not(.table),
+  .post-content table,
+  d-article table {
     tbody tr:hover {
       background-color: rgba(var(--global-theme-color-rgb), 0.1);
     }
