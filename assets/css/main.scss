@@ -85,3 +85,38 @@ html[data-theme="dark"] {
                 0 0 0 1px rgba(var(--global-theme-color-rgb), 0.2);
   }
 }
+
+// Table styling for Markdown content
+.post table,
+article table {
+  margin: 2rem auto; // Centers the table and adds vertical spacing
+  border-collapse: collapse;
+  width: auto;
+  max-width: 100%;
+  
+  th,
+  td {
+    border: 1px solid var(--global-divider-color);
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--global-code-bg-color);
+    font-weight: bold;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(var(--global-theme-color-rgb), 0.05);
+  }
+}
+
+// Dark mode adjustments for tables
+html[data-theme="dark"] {
+  .post table,
+  article table {
+    tbody tr:hover {
+      background-color: rgba(var(--global-theme-color-rgb), 0.1);
+    }
+  }
+}
