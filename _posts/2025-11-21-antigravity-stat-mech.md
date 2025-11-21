@@ -7,7 +7,7 @@ description: Testing Google's new IDE and top model on a ferromagnetic simulatio
 
 I like learning about the hidden benchmarks that everyone seems to bring out when a new large language model drops. Mine used to be asking the model about obscure but well-documented people on the internet like family members or acquaintances in the sciences or with IMDB credits. Since ~late 2024, most models are nailing that one so it's not as interesting. Instead, I've moved onto Javascript-based visualizations. of statistical physics
 
-. Since Gemini 3 and Google's Antigravity IDE were released recently (and yes, I am aware it is basically Windsurf), I wanted to give it a try with an easy one - the Ising model of ferromagnetism.
+Since Gemini 3 and Google's Antigravity IDE were released recently (and yes, I am aware it is basically Windsurf), I wanted to give it a try with an easy one - the Ising model of ferromagnetism.
 
 Here's what Antigravity with Gemini 3 Pro cooked up in an hour:
 
