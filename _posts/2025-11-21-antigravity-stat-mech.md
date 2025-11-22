@@ -62,10 +62,15 @@ Here's what Antigravity with Gemini 3 Pro cooked up in an hour:
         border-radius: 12px;
         overflow: hidden;
         cursor: none;
+        width: 100%;
+        max-width: 600px;
     }
 
-    canvas {
+    #simCanvas {
         display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 
     #info-overlay {
@@ -217,6 +222,8 @@ Here's what Antigravity with Gemini 3 Pro cooked up in an hour:
         display: flex;
         gap: 20px;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .control-group {
@@ -284,8 +291,8 @@ Here's what Antigravity with Gemini 3 Pro cooked up in an hour:
     }
 
     #plot-container {
-        width: 600px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 600px;
         height: 60px;
         background: transparent;
         border-radius: 8px;
@@ -303,6 +310,46 @@ Here's what Antigravity with Gemini 3 Pro cooked up in an hour:
     .value-display {
         font-family: monospace;
         font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+        #ising-app {
+            padding: 1rem 0.5rem;
+        }
+
+        #controls {
+            padding: 12px 15px;
+        }
+
+        #controls-body {
+            gap: 12px;
+        }
+
+        input[type="range"] {
+            width: 80px;
+        }
+
+        #info-overlay {
+            padding: 20px;
+        }
+
+        #info-content {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #controls-body {
+            gap: 8px;
+        }
+
+        input[type="range"] {
+            width: 70px;
+        }
+
+        .control-group label {
+            font-size: 0.65rem;
+        }
     }
 </style>
 
