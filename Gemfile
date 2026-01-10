@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+
+# Ruby 4.0 compatibility - these gems are no longer bundled by default
+gem 'ostruct'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'faraday-retry'
