@@ -1195,7 +1195,7 @@ ninja-keys::part(ninja-input-wrapper) {
     
     .collapsible-icon {
       margin-right: 0.5rem;
-      transition: transform 0.15s ease;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       font-size: 0.875rem;
     }
     
@@ -1205,17 +1205,29 @@ ninja-keys::part(ninja-input-wrapper) {
   }
   
   .collapsible-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.15s ease;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     
     &.open {
-      max-height: 100em;
+      grid-template-rows: 1fr;
     }
     
     .collapsible-inner {
-      padding: 0 1rem 1rem 1rem;
+      overflow: hidden;
+      padding: 0 1rem;
       color: var(--global-text-color);
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &.open .collapsible-inner {
+      padding: 0 1rem 1rem 1rem;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
