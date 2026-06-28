@@ -25,10 +25,18 @@ $(document).ready(function () {
     });
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
-    Toc.init($myNav);
+    Toc.init({
+      $nav: $myNav,
+      $scope: $("#markdown-content"),
+    });
+    if (!$myNav.find(".nav-link").length) {
+      $(".toc-sidebar").hide();
+    }
     $("body").scrollspy({
       target: navSelector,
+      offset: 80,
     });
+    $("body").scrollspy("refresh");
   }
 
   // add css to jupyter notebooks
