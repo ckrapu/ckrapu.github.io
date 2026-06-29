@@ -24,11 +24,138 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-.highlight {
-  font-size: 8pt; // Adjust this value to change the font size
-  line-height: 1.8;
-  max-width: 80%; // Adjust this value to your desired width
-  margin: 0 auto; // Centers the code block
+:root {
+  --code-cell-text-color: #24292f;
+  --code-cell-label-color: #6e7781;
+  --code-cell-rule-color: #d0d7de;
+  --code-output-text-color: #0969da;
+  --code-output-rule-color: #54aeef;
+}
+
+html[data-theme="dark"] {
+  --code-cell-text-color: #d7dde4;
+  --code-cell-label-color: #8d949d;
+  --code-cell-rule-color: #3c4147;
+  --code-output-text-color: #47c7e9;
+  --code-output-rule-color: #2fa8c8;
+}
+
+.post-content,
+.post {
+  div[class*="language-"].highlighter-rouge {
+    position: relative;
+    width: min(860px, 100%);
+    margin: 2rem auto 2.35rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--code-cell-rule-color);
+
+    &::before {
+      display: block;
+      margin-bottom: 0.65rem;
+      color: var(--code-cell-label-color);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  div.language-python.highlighter-rouge::before {
+    content: "Python";
+  }
+
+  div.language-text.highlighter-rouge {
+    margin-top: -0.55rem;
+    border-left-color: var(--code-output-rule-color);
+
+    &::before {
+      content: "Output";
+      color: var(--code-output-text-color);
+    }
+
+    pre,
+    code {
+      color: var(--code-output-text-color);
+    }
+
+    .copy {
+      display: none;
+    }
+  }
+
+  .highlight {
+    max-width: none;
+    margin: 0;
+    font-size: 0.6rem;
+    line-height: 1.75;
+    background: transparent !important;
+  }
+
+  pre {
+    margin: 0;
+    padding: 0;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    border-radius: 0;
+    background: transparent !important;
+    color: var(--code-cell-text-color);
+    font-family:
+      "SF Mono",
+      "Cascadia Code",
+      "JetBrains Mono",
+      "IBM Plex Mono",
+      Menlo,
+      Consolas,
+      monospace;
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0;
+  }
+
+  pre code {
+    color: inherit;
+    background: transparent !important;
+    padding: 0;
+  }
+
+  .code-display-wrapper {
+    position: relative;
+
+    .copy {
+      top: 0;
+      right: 0;
+      width: 2rem;
+      height: 2rem;
+      padding: 0;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--code-cell-label-color);
+      font-size: 0.95rem;
+
+      &:hover {
+        border-color: var(--code-output-rule-color);
+        color: var(--code-output-text-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .post-content,
+  .post {
+    div[class*="language-"].highlighter-rouge {
+      padding-left: 1.35rem;
+    }
+
+    pre,
+    .highlight {
+      font-size: 0.54rem;
+    }
+  }
 }
 
 // Important Box styles

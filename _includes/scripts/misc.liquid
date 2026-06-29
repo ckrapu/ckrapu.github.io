@@ -16,7 +16,17 @@
   ></script>
   <script defer src="{{ '/assets/js/zoom.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+{% assign enable_toc_sidebar = false %}
 {% if page.toc and page.toc.sidebar %}
+  {% assign enable_toc_sidebar = true %}
+{% elsif page.layout == 'post' or page.collection == 'posts' %}
+  {% assign enable_toc_sidebar = true %}
+{% endif %}
+{% if page.toc == false or page.toc.sidebar == false %}
+  {% assign enable_toc_sidebar = false %}
+{% endif %}
+
+{% if enable_toc_sidebar %}
   <!-- Sidebar Table of Contents -->
   <script defer src="{{ '/assets/js/bootstrap-toc.min.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

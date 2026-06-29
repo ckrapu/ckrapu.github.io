@@ -21,9 +21,19 @@
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container{% if page.toc and page.toc.sidebar %} toc-container{% endif %} mt-5" role="main">
-      {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == 'right' %}
+    {% assign toc_sidebar = '' %}
+    {% if page.toc and page.toc.sidebar %}
+      {% assign toc_sidebar = page.toc.sidebar %}
+    {% elsif page.layout == 'post' or page.collection == 'posts' %}
+      {% assign toc_sidebar = 'left' %}
+    {% endif %}
+    {% if page.toc == false or page.toc.sidebar == false %}
+      {% assign toc_sidebar = '' %}
+    {% endif %}
+
+    <div class="container{% if toc_sidebar != '' %} toc-container{% endif %} mt-5" role="main">
+      {% if toc_sidebar != '' %}
+        {% if toc_sidebar == 'right' %}
           <div class="row toc-layout">
             <!-- main content area -->
             <div class="col-lg-9">{{ content }}</div>

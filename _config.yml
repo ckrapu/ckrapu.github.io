@@ -258,7 +258,7 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: "_posts"
+      path: ""
       type: "posts"
     values:
       toc:
