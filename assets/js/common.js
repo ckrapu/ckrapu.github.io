@@ -17,6 +17,41 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  const syncOutputScrollbar = (pre) => {
+    const wrapper = pre.closest("div.language-text.highlighter-rouge, div.language-python.highlighter-rouge + div.language-plaintext.highlighter-rouge");
+    if (!wrapper) {
+      return;
+    }
+    const isScrollable = pre.scrollHeight > pre.clientHeight + 1;
+    wrapper.classList.toggle("is-scrollable-output", isScrollable);
+    if (!isScrollable) {
+      return;
+    }
+
+    const labelOffset = 32;
+    const availableTrack = Math.max(pre.clientHeight - 8, 1);
+    const thumbHeight = Math.max(availableTrack * (pre.clientHeight / pre.scrollHeight), 18);
+    const maxScrollTop = Math.max(pre.scrollHeight - pre.clientHeight, 1);
+    const maxThumbTop = Math.max(availableTrack - thumbHeight, 0);
+    const thumbTop = labelOffset + 4 + (pre.scrollTop / maxScrollTop) * maxThumbTop;
+
+    wrapper.style.setProperty("--code-output-scrollbar-top", `${thumbTop}px`);
+    wrapper.style.setProperty("--code-output-scrollbar-thumb-height", `${thumbHeight}px`);
+  };
+
+  const initOutputScrollbars = () => {
+    document.querySelectorAll("div.language-text.highlighter-rouge pre, div.language-python.highlighter-rouge + div.language-plaintext.highlighter-rouge pre").forEach((pre) => {
+      syncOutputScrollbar(pre);
+      if (!pre.dataset.outputScrollbarBound) {
+        pre.addEventListener("scroll", () => syncOutputScrollbar(pre), { passive: true });
+        pre.dataset.outputScrollbarBound = "true";
+      }
+    });
+  };
+
+  initOutputScrollbars();
+  window.addEventListener("resize", initOutputScrollbars);
+
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove related publications years from the TOC

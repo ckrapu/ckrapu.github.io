@@ -65,7 +65,19 @@ html[data-theme="dark"] {
     content: "Python";
   }
 
-  div.language-text.highlighter-rouge {
+  div[class*="language-"].highlighter-rouge + div[class*="language-"].highlighter-rouge:not(.language-text):not(.language-plaintext) {
+    margin-top: -2.35rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  div.language-text.highlighter-rouge,
+  div.language-python.highlighter-rouge + div.language-plaintext.highlighter-rouge {
+    --code-output-scrollbar-top: 2rem;
+    --code-output-scrollbar-thumb-height: 2.75rem;
+
     margin-top: -0.55rem;
     border-left-color: var(--code-output-rule-color);
 
@@ -79,8 +91,52 @@ html[data-theme="dark"] {
       color: var(--code-output-text-color);
     }
 
+    pre {
+      max-height: calc(10 * 1.75em);
+      padding-right: 0.75rem;
+      overflow-y: auto;
+      scrollbar-color: var(--code-output-rule-color) transparent;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 0.55rem;
+        height: 0.55rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+        border-radius: 999px;
+        background-color: var(--code-output-rule-color);
+        background-clip: content-box;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: var(--code-output-text-color);
+      }
+    }
+
     .copy {
       display: none;
+    }
+
+    &.is-scrollable-output {
+      box-shadow: inset -1px 0 0 rgba(var(--global-theme-color-rgb), 0.16);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: var(--code-output-scrollbar-top);
+        right: 0.15rem;
+        width: 0.22rem;
+        height: var(--code-output-scrollbar-thumb-height);
+        border-radius: 999px;
+        background: var(--code-output-rule-color);
+        pointer-events: none;
+      }
     }
   }
 
