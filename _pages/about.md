@@ -18,7 +18,7 @@ social: false # includes social icons at the bottom of the page
 <div class="about-intro">
 <div class="about-intro__content" markdown="1">
 
-<p class="about-location"><i class="ti ti-map-pin" aria-hidden="true"></i><span>bay area / north dakota</span></p>
+<p>bay area / north dakota</p>
 
 Currently working on internal AI tools @ NVIDIA. 
 
