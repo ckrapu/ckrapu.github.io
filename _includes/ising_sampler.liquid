@@ -1,0 +1,13 @@
+<figure
+  class="ising-sampler"
+  role="img"
+  aria-label="A three-dimensional Ising point field whose elevation and sampling rate respond to page activity. Moving across the field flips nearby cells; pressing and holding sweeps the system temperature between zero and three."
+>
+  <canvas
+    class="ising-sampler__canvas"
+    data-ising-sampler
+    aria-hidden="true"
+  ></canvas>
+</figure>
+
+<script defer src="{{ '/assets/js/ising-sampler.js' | relative_url | bust_file_cache }}"></script>

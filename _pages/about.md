@@ -15,6 +15,9 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
+<div class="about-intro">
+<div class="about-intro__content" markdown="1">
+
 <p>bay area / north dakota</p>
 
 Currently working on internal AI tools @ NVIDIA. 
@@ -38,3 +41,9 @@ I received my graduate training in statistics and engineering at Duke University
 {% endcapture %}
 
 {% include collapsible.liquid title="Personal trivia" content=personal_info %}
+
+</div>
+<div class="about-intro__visual">
+{% include ising_sampler.liquid %}
+</div>
+</div>
