@@ -58,6 +58,24 @@ html[data-theme="dark"] {
   }
 }
 
+.about-location {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+  opacity: 0.65;
+
+  i {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+  }
+}
+
 .ising-sampler {
   display: flex;
   align-items: stretch;
