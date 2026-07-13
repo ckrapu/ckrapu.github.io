@@ -5,6 +5,7 @@
   const context = canvas.getContext("2d", { alpha: true });
   const visualContainer = canvas.closest(".about-intro__visual");
   const stackedLayout = window.matchMedia("(max-width: 720px)");
+  const isometricLayout = window.matchMedia("(min-width: 721px)");
   const rows = 56;
   const targetPointSpacing = 4.5;
   const maximumTemperature = 3;
@@ -109,6 +110,8 @@
 
     for (let row = 0; row < rows; row += 1) {
       const depth = row / (rows - 1);
+      const depthFromCenter = depth - 0.5;
+      const isIsometric = isometricLayout.matches;
       const perspective = 0.68 + depth * 0.32;
       const verticalFade = Math.min(1, depth / 0.09) * Math.min(1, (1 - depth) / 0.1);
 
@@ -124,17 +127,22 @@
         const undulation = Math.sin(horizontalPhase * 3 + row * 0.17) * 0.035 + Math.sin(horizontalPhase - row * 0.29) * 0.025;
         const elevation = Math.max(0, Math.min(1, 0.08 + localField * 0.72 + undulation));
         const worldX = column / (columns - 1) - 0.5;
-        const x = cssWidth * 0.5 + worldX * cssWidth * 1.06 * perspective;
-        const floorY = cssHeight * (0.035 + depth * 0.93);
-        const y = floorY - elevation * cssHeight * 0.24 * perspective;
+        const x = isIsometric
+          ? cssWidth * 0.5 + (worldX + depthFromCenter) * cssWidth * 0.46
+          : cssWidth * 0.5 + worldX * cssWidth * 1.06 * perspective;
+        const floorY = isIsometric
+          ? cssHeight * 0.56 + (depthFromCenter - worldX) * cssHeight * 0.27
+          : cssHeight * (0.035 + depth * 0.93);
+        const projectionScale = isIsometric ? 0.9 : perspective;
+        const y = floorY - elevation * cssHeight * 0.24 * projectionScale;
 
         projectedX[index] = x;
         projectedY[index] = y;
 
         if (displaySpins[index] <= 0.002) continue;
 
-        const pointSize = 0.55 + perspective * 1.15;
-        context.globalAlpha = displaySpins[index] * verticalFade * (0.42 + perspective * 0.58);
+        const pointSize = 0.55 + projectionScale * 1.15;
+        context.globalAlpha = displaySpins[index] * verticalFade * (0.42 + projectionScale * 0.58);
         context.fillRect(x - pointSize * 0.5, y - pointSize * 0.5, pointSize, pointSize);
       }
     }
@@ -279,6 +287,11 @@
   reducedMotion.addEventListener("change", () => {
     needsPaint = true;
     wake();
+    draw();
+  });
+
+  isometricLayout.addEventListener("change", () => {
+    needsPaint = true;
     draw();
   });
 
