@@ -20,7 +20,7 @@ social: false # includes social icons at the bottom of the page
 
 <p>bay area / north dakota</p>
 
-Currently working on internal AI tools @ NVIDIA. 
+Currently working on applied AI @ NVIDIA. 
 
 I received my graduate training in statistics and engineering at Duke University under Mark Borsuk, graduating in 2020. I was awarded full-funding fellowships by the NSF ([IGERT, 2014](https://czo-archive.criticalzone.org/calhoun/news/story/duke-phd-students-win-2-year-igert-fellowships/)) and NASA ([NESSF, 2017](https://cce.nasa.gov/cgi-bin/terrestrial_ecology/pi_list.pl?projType=project&progID=2&projID=4037)) with additional support from Amazon and NVIDIA. My research focused on developing graphical models for high-dimensional spatial data, with applications in engineering, ecology, and the environment.
 
