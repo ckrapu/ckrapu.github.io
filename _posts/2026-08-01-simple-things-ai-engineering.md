@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A few simple tricks nobody tells you when you start building chatbots"
+title: "A few simple tricks for building chatbots"
 date: 2026-08-01
 description: Everyone eventually figures them out on their own, right?
 tags: llm chatbot
