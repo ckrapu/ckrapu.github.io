@@ -21,10 +21,15 @@
     {% include header.liquid %}
 
     <!-- Content -->
+    {% assign is_post = false %}
+    {% if page.layout == 'post' or page.collection == 'posts' %}
+      {% assign is_post = true %}
+    {% endif %}
+
     {% assign toc_sidebar = '' %}
     {% if page.toc and page.toc.sidebar %}
       {% assign toc_sidebar = page.toc.sidebar %}
-    {% elsif page.layout == 'post' or page.collection == 'posts' %}
+    {% elsif is_post %}
       {% assign toc_sidebar = 'left' %}
     {% endif %}
     {% if page.toc == false or page.toc.sidebar == false %}
@@ -40,7 +45,9 @@
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-lg-3 d-none d-lg-block">
               <aside class="toc-sidebar sticky-top" aria-label="Table of contents">
-                <div class="toc-sidebar-label">Contents</div>
+                {% unless is_post %}
+                  <div class="toc-sidebar-label">Contents</div>
+                {% endunless %}
                 <nav id="toc-sidebar"></nav>
               </aside>
             </div>
@@ -50,7 +57,9 @@
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-lg-3 d-none d-lg-block">
               <aside class="toc-sidebar sticky-top" aria-label="Table of contents">
-                <div class="toc-sidebar-label">Contents</div>
+                {% unless is_post %}
+                  <div class="toc-sidebar-label">Contents</div>
+                {% endunless %}
                 <nav id="toc-sidebar"></nav>
               </aside>
             </div>
