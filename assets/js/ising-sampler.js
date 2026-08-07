@@ -15,7 +15,6 @@
   const updatesPerSecond = 1.9;
   const fadeDurationMs = 115;
   const pointerRadius = 2;
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   let columns = 0;
   let spins = new Int8Array();
@@ -173,17 +172,13 @@
 
     const recentActivity = Math.exp(-(now - lastActivity) / activityDecayMs);
     const activity = idleActivity + (1 - idleActivity) * recentActivity;
-    const simulationIsActive = !reducedMotion.matches;
-
-    if (simulationIsActive) {
-      updateRemainder += (spins.length * updatesPerSecond * activity * elapsed) / 1000;
-      const updates = Math.floor(updateRemainder);
-      updateRemainder -= updates;
-      for (let index = 0; index < updates; index += 1) gibbsUpdate();
-    }
+    updateRemainder += (spins.length * updatesPerSecond * activity * elapsed) / 1000;
+    const updates = Math.floor(updateRemainder);
+    updateRemainder -= updates;
+    for (let index = 0; index < updates; index += 1) gibbsUpdate();
 
     let isFading = false;
-    const fadeAmount = reducedMotion.matches ? 1 : 1 - Math.exp(-elapsed / fadeDurationMs);
+    const fadeAmount = 1 - Math.exp(-elapsed / fadeDurationMs);
     for (let index = 0; index < spins.length; index += 1) {
       const target = spins[index] === 1 ? 1 : 0;
       const difference = target - displaySpins[index];
@@ -197,12 +192,12 @@
     }
 
     if (isFading || needsPaint) draw();
-    if (simulationIsActive || isFading) frameRequest = requestAnimationFrame(animate);
+    frameRequest = requestAnimationFrame(animate);
   }
 
   function wake() {
     lastActivity = performance.now();
-    if (!isVisible || reducedMotion.matches || frameRequest) return;
+    if (!isVisible || frameRequest) return;
     lastFrame = lastActivity;
     frameRequest = requestAnimationFrame(animate);
   }
@@ -283,12 +278,6 @@
     isVisible = entry.isIntersecting;
     if (isVisible) wake();
   }).observe(canvas);
-
-  reducedMotion.addEventListener("change", () => {
-    needsPaint = true;
-    wake();
-    draw();
-  });
 
   isometricLayout.addEventListener("change", () => {
     needsPaint = true;
