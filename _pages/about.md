@@ -25,12 +25,6 @@ Currently working on applied AI @ NVIDIA.
 I received my graduate training in statistics and engineering at Duke University under Mark Borsuk, graduating in 2020. I was awarded full-funding fellowships by the NSF ([IGERT, 2014](https://czo-archive.criticalzone.org/calhoun/news/story/duke-phd-students-win-2-year-igert-fellowships/)) and NASA ([NESSF, 2017](https://cce.nasa.gov/cgi-bin/terrestrial_ecology/pi_list.pl?projType=project&progID=2&projID=4037)) with additional support from Amazon and NVIDIA. My research focused on developing graphical models for high-dimensional spatial data, with applications in engineering, ecology, and the environment.
 
 
-{% capture professional_info %}
-- I spent six years in grad school. I loved grad school so much that I pushed back my defense for a year just so I could use all of my funding and focus on my research.
-- I moved to NVIDIA in 2024, focusing on retrieval and agentic workflows for our sales & field operations.
-{% endcapture %}
-{% include collapsible.liquid title="Professional experience" content=professional_info %}
-
 {% capture personal_info %}
 - I was hard of hearing in my early life, and spent most of my childhood in speech therapy.
 - I started college at Valley City State University and later studied at Macalester College for physics. 
